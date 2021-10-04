@@ -9,7 +9,7 @@
 .header {
     height: 100px;
     background-color: black;
-    border: 3px solid aquamarine;
+    border: 3px solid rgb(38, 186, 136);
 }
 
 .container {
@@ -32,7 +32,7 @@
 }
 
 .header h1 {
-    color: aquamarine;
+    color: rgb(38, 186, 136);
 }
 
 .header li {
@@ -47,4 +47,123 @@
 .navbar li a {
     color: goldenrod;
     text-decoration: none;
+}
+
+.banner {
+    height: 500px;
+    background-image: url(https://images2.alphacoders.com/204/thumb-1920-20402.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.message {
+    margin-right: 250px;
+    width: 10%;
+    color: white;
+    font-size: 40px;
+}
+
+.message span {
+    font-weight: bolder;
+}
+
+.proposito {
+    height: 450px;
+    background-color: #e5e5e5;
+}
+
+.proposito .container .mvv div img {
+    height: 100px;
+    width: 100px;
+}
+
+.proposito .container .mvv {
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.proposito .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.proposito .container .mvv div {
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.proposito .container h2 {
+    color: rgb(223, 18, 80);
+    background-color: white;
+    padding: 25px;
+    border-radius: 25px;
+}
+
+.proposito .container .mvv div h3 {
+    color: rgb(223, 18, 80);
+    font-weight: bolder;
+    margin: 25px 0;
+}
+
+.footer {
+    background-color: rgb(38, 186, 136);
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer p {
+    color: white;
+}
+
+.banner .formLogin {
+    background-color: #e5e5e5;
+    width: 30%;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.banner .formLogin div {
+    display: flex;
+    flex-direction: column;
+}
+
+.banner .formLogin input {
+    border-radius: 10px;
+    border: rgb(223, 18, 80) solid 2px;
+    padding: 10px 10px;
+}
+
+.banner .formLogin button {
+    background-color: rgb(223, 18, 80);
+    padding: 10px 10px;
+    font-weight: bolder;
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+}
+
+.banner .formLogin span {
+    color: rgb(223, 18, 80);
+    font-weight: bolder;
+}
+
+.banner .formLogin h2 {
+    color: rgb(223, 18, 80);
 }
