@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Cadastro</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,10 +13,10 @@
             <h1>AcquaTec</h1>
             <ul class="navbar">
                 <li><a href="index.html">Início</a></li>
-                <li> <a href="pag2.html">Simulador</a></li>
+                <li><a href="pag2.html">Simulador</a></li>
                 <li>|</li>
-                <li class="active">Login</li>
-                <li><a href="cadastro.html"></a>Cadastro</li>
+                <li><a href="login.html"></a> Login</li>
+                <li class="active">Cadastro</li>
             </ul>
         </div>
     </div>
@@ -25,14 +25,25 @@
         <div class="formLogin">
             <h2>Olá, Seja bem-vindo!</h2>
             <div>
+                <span>Nome:</span>
+                <input type="text" placeholder="Nome Completo">
+            </div>
+            <div>
                 <span>E-mail:</span>
                 <input type="text" placeholder="Insire o e-mail para login">
             </div>
             <div>
                 <span>Senha:</span>
-                <input type="text" placeholder="************">
+                <input id="senha1" type="password" placeholder="************">
             </div>
-            <button>Entrar</button>
+            <div>
+                <span>Confirme sua senha:</span>
+                <input id="senha2" type="password" placeholder="************">
+            </div>
+            <div>
+                <span></span>
+            </div>
+            <button onclick="verificar()">Cadastrar</button>
         </div>
     </div>
 
@@ -42,3 +53,11 @@
 
 </body>
 </html>
+
+<script>
+    function verificar() {
+        if (senha1.value != senha2.value){
+            alert('verifique suas senhas');
+        }
+    }
+</script>
